@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+    </header>
+
+    <main class="container">
+        <section class="bio">
+            <img src="../img/perfil_photo.png" alt="Foto de Perfil" class="perfil-img">
+            <div class="descricao">
+                <h2>Paulo de Souza Stauffer Alberto</h2>
+                <p>Prazer!!, essa é minha biografia, meu nome é Paulo, e atualmente tenho 19 anos, estou cursando Ciências da Computação na Universidade de Vila Velha.</p>
+            </div>
+        </section>
+        <section style="background-color: rgb(207, 239, 245)"class="curiosidades">
+            <h3>Sobre mim</h3>
+            <ul>
+                <p>Sou uma pessoa extremamente observadora e curiosa por natureza. Estudar sempre foi algo que me atrai, especialmente porque estou constantemente pensando no futuro e no que posso fazer hoje para moldá-lo de forma positiva. Mesmo tendo estudado somente em escola pública, nunca tive dificuldade para aprender. Sempre tive atenção aos detalhes e uma vontade de entender o mundo ao meu redor, observar sempre foi minha maior habilidade.
+
+                Gosto da cultura geek e nerd. Se eu tivesse que escolher um hobby, com certeza desenho estaria entre os primeiros, mesmo que ainda esteja aprendendo. Para mim, desenhar é uma maneira poderosa de transformar pensamentos em algo visual e único, é uma forma de se expressar magnifica, junto a música.</p> <br> <p>No futuro eu me vejo trabalhando para área de tecnologia, não sei ao certo qual área irei me aprofundar, mas sou apaixonado por programação e jogos, entretanto eu gostaria de virar cientista.</p>
+                
+            </ul>
+        </section>
+        <section class="curiosidades">
+            <h3>Curiosidades</h3>
+            <ul>
+                <li>Gosto de rock, e ouço algumas bandas. <button class="audio-btn" onclick="document.getElementById('musica').play()" title="Tocar música">
+                    <img src="../img/play.png" alt="Play" class="audio-icon">
+                </button>
+                <button class="audio-btn" onclick="document.getElementById('musica').pause()" title="Pausar música">
+                    <img src="../img/pause.png" alt="Pause" class="audio-icon">&nbsp;&nbsp;
+                </button>
+                </button>
+                <img src="../img/volume.png" alt="Volume" class="audio-icon volume-icon">&nbsp;
+            </button>
+                <input type="range" min="0" max="1" step="0.01" value="1"
+                       onchange="document.getElementById('musica').volume = this.value"
+                       class="volume-slider" title="Controle de volume"> - "Mary On A Cross" - Ghost</li>
+                <li>Gosto de Leitura, principalmente historias ficticias, meu livro favorito atualmente é Percy Jackson.</li>
+                <li>Já Assistir diversos animes, meu favorio é One Piece.</li>
+                <li>Sou apaixonado pela ciência, amo apreender coisas novas e principalmente descobrir curiosidades sobre o mundo em geral, atualmente estou me apaixonando por programação.</li>
+            </ul>
+            <audio id="musica" src="../audio/Mary_on_a_cross.m4a"></audio>
+        </section>
+
+        <section class="links">
+            <h3>🔗 Acesso Rápido</h3>
+            <div class="icones">
+                <a href="../index.html" title="Menu"><img src="../img/Iconehome.png" alt="Sobremim"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Paulo Stauffer</p>
+    </footer>
+</body>
+</html>
