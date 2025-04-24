@@ -33,6 +33,19 @@
         <div class="foto-centralizada">
             <img src="./img/perfil_photo.png" alt="Foto de Perfil" class="perfil-img">
         </div>
+        <div class="audio-player">
+            <button class="audio-btn" onclick="document.getElementById('musica').play()" title="Tocar música">
+                <img src="./img/play.png" alt="Play" class="audio-icon">
+            </button>
+            <button class="audio-btn" onclick="document.getElementById('musica').pause()" title="Pausar música">
+                <img src="./img/pause.png" alt="Pause" class="audio-icon">
+            </button>
+            <img src="./img/volume.png" alt="Volume" class="audio-icon volume-icon">
+            <input type="range" min="0" max="1" step="0.01" value="1"
+                onchange="document.getElementById('musica').volume = this.value"
+                class="volume-slider" title="Controle de volume">
+            <span>– "Mary On A Cross" - Ghost</span>
+        </div>
         <div class="info-dupla">
             <section class="curiosidades">
                 <h3>Sobre Mim</h3>
@@ -46,34 +59,21 @@
                     No futuro me vejo trabalhando na área de tecnologia. Amo programação e jogos — e quem sabe, virar cientista!
                 </p>
             </section>
-
             <section class="curiosidades">
-                <h3>Curiosidades</h3>
+                <h3>Curiosidades</h3>            
                 <ul>
-                    <li>
-                        Gosto de rock.
-                        <button class="audio-btn" onclick="document.getElementById('musica').play()" title="Tocar música">
-                            <img src="./img/play.png" alt="Play" class="audio-icon">
-                        </button>
-                        <button class="audio-btn" onclick="document.getElementById('musica').pause()" title="Pausar música">
-                            <img src="./img/pause.png" alt="Pause" class="audio-icon">
-                        </button>
-                        <img src="./img/volume.png" alt="Volume" class="audio-icon volume-icon">
-                        <input type="range" min="0" max="1" step="0.01" value="1"
-                            onchange="document.getElementById('musica').volume = this.value"
-                            class="volume-slider" title="Controle de volume"> 
-                        – "Mary On A Cross" - Ghost
-                    </li>
+                    <li>Gosto de rock.</li>
                     <li>Gosto de leitura, principalmente histórias fictícias como Percy Jackson.</li>
                     <li>Já assisti diversos animes, meu favorito é One Piece.</li>
                     <li>Amo aprender curiosidades sobre o mundo, e me encantei com programação.</li>
                 </ul>
+            
                 <audio id="musica" src="./audio/Mary_on_a_cross.m4a"></audio>
             </section>
         </div>
 
         <section class="links">
-            <h3></h3>
+            <h3>Voltar</h3>
             <div class="icones">
                 <a href="./index.html" title="Menu"><img src="./img/Iconehome.png" alt="Menu"></a>
             </div>
