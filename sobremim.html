@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="shortcut icon" href="./img/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <style>.foto-centralizada {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    
+    .info-dupla {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+    
+    .info-dupla .curiosidades {
+        flex: 1 1 45%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+    </header>
+
+    <main class="container">
+        <div class="foto-centralizada">
+            <img src="./img/perfil_photo.png" alt="Foto de Perfil" class="perfil-img">
+        </div>
+        <div class="info-dupla">
+            <section class="curiosidades">
+                <h3>Sobre Mim</h3>
+                <p>
+                    Sou uma pessoa extremamente observadora e curiosa por natureza. Estudar sempre foi algo que me atrai, especialmente porque estou constantemente pensando no futuro e no que posso fazer hoje para moldá-lo de forma positiva.
+                </p>
+                <p>
+                    Gosto da cultura geek e nerd. Se eu tivesse que escolher um hobby, com certeza desenho estaria entre os primeiros, mesmo que ainda esteja aprendendo.
+                </p>
+                <p>
+                    No futuro me vejo trabalhando na área de tecnologia. Amo programação e jogos — e quem sabe, virar cientista!
+                </p>
+            </section>
+
+            <section class="curiosidades">
+                <h3>Curiosidades</h3>
+                <ul>
+                    <li>
+                        Gosto de rock.
+                        <button class="audio-btn" onclick="document.getElementById('musica').play()" title="Tocar música">
+                            <img src="./img/play.png" alt="Play" class="audio-icon">
+                        </button>
+                        <button class="audio-btn" onclick="document.getElementById('musica').pause()" title="Pausar música">
+                            <img src="./img/pause.png" alt="Pause" class="audio-icon">
+                        </button>
+                        <img src="./img/volume.png" alt="Volume" class="audio-icon volume-icon">
+                        <input type="range" min="0" max="1" step="0.01" value="1"
+                            onchange="document.getElementById('musica').volume = this.value"
+                            class="volume-slider" title="Controle de volume"> 
+                        – "Mary On A Cross" - Ghost
+                    </li>
+                    <li>Gosto de leitura, principalmente histórias fictícias como Percy Jackson.</li>
+                    <li>Já assisti diversos animes, meu favorito é One Piece.</li>
+                    <li>Amo aprender curiosidades sobre o mundo, e me encantei com programação.</li>
+                </ul>
+                <audio id="musica" src="./audio/Mary_on_a_cross.m4a"></audio>
+            </section>
+        </div>
+
+        <section class="links">
+            <h3></h3>
+            <div class="icones">
+                <a href="./index.html" title="Menu"><img src="./img/Iconehome.png" alt="Menu"></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

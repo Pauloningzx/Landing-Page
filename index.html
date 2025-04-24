@@ -1,49 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <style>.icones img {
-        width: 80px;
-        height: 80px;
-    }</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="shortcut icon" href="./img/Favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Uncial Antiqua', serif;
+      background-color: #0f0f1a;
+      color: #e6e6e6;
+      line-height: 1.6;
+      background-size: cover;
+    }
+    .navbar {
+      background-color: #1a1a2e;
+      padding: 1rem;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar h2 {
+      color: #c9dbff;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .navbar a {
+      color: #c9dbff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .navbar a:hover {
+      background-color: #2a2a43;
+      transform: scale(1.1);
+    }
+    .main {
+      padding: 2rem;
+      margin-top: 150px;
+      height: 1000%;  
+    }
+    header {
+      background-color: #1d1d2f;
+      color: #f0f0f0;
+      padding: auto;
+      text-align: center;
+      height: 450px;  
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      color: #f0f0f0;
+      font-size: 3em;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      background-color: #14141f;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
+  <div class="navbar">
+    <h2>HOME PAGE</h2>
+    <a href="./github.html" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+    <a href="./sobremim.html" title="Sobre Mim"><i class="fas fa-user"></i> Sobre Mim</a>
+    <a href="./curriculo.html" title="Currículo"><i class="fas fa-file-alt"></i> Currículo</a>
+    <a href="./serviços.html" title="Serviços"><i class="fas fa-cogs"></i> Serviços</a>
+    <a href="./contato.html" title="Contato"><i class="fas fa-envelope"></i> Contato</a>
+  </div>
+
+  <div class="main">
     <header>
-        <h1>Menu</h1>
+      <h1 style="font-size: 2em;">Bem-vindo ao Menu!</h1>
     </header>
-    <br>
-    <br>
-        <section class="links">
-            <h3>🔗 Acesso Rápido</h3>
-            <div class="icones">
-                <a href="./Git/index.html" title="GitHub"><img src="./img/Git.png" alt="GitHub"></a>
-                <a href="./sobremim/index.html" title="Sobremim"><img src="./img/Sobremim.png" alt="Sobremim"></a>
-                <a href="./Curriculo/index.html" title="Currículo"><img src="./img/curriculo.png" alt="Currículo"></a>
-                <a href="./Serviços/index.html" title="Serviços"><img src="./img/Servicos.png" alt="Serviços"></a>
-                <a href="./contato/index.html" title="Contato"><img src="./img/contato.png" alt="Contato"></a>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br><br><br><br><br><br>
-        </section>
-    <footer>
-        <p>&copy; 2025 - Paulo Stauffer</p>
-    </footer>
+  </div>
 </body>
 </html>

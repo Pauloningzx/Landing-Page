@@ -1,168 +1,178 @@
-h1{color: rgb(255, 255, 255); 
-    font-size: 3em; 
-    font-family: cursive;}
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #926de9;
-        color: #012342;
-        line-height: 1.6;
-    }
-    
-    header {
-        background-color: #7a4be9;
-        color: rgb(0, 0, 0);
-        padding: 2rem 0;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(85, 13, 13, 0.1);
-    }
-    
-    .container {
-        max-width: 900px;
-        margin: 2rem auto;
-        padding: 1rem;
-        align-content:end;
-    }
-    
-    .bio {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .perfil-img {
-        width: 200px;
-        align-content: center;
-        height: 200px;
-        border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-        object-fit: cover;
-        border: 3px solid #8c00ff;
-    }
-    
-    .curiosidades {
-        background-color: rgb(151, 199, 207);
-        padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        margin-bottom: 2rem;
-    }
-    
-    .curiosidades h3 {
-        margin-bottom: rem;
-    }
-    
-    .curiosidades ul {
-        list-style: none;
-    }
-    
-    .curiosidades li {
-        margin-bottom: 0.5rem;
-        padding-left: 1rem;
-        position: relative;
-    }
-    
-    .curiosidades li::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        color: #4a90e2;
-    }
-    
-    .links {
-        text-align: center;
-    }
-    
-    .links h3 {
-        margin-bottom: 1rem;
-    }
-    
-    .icones a {
-        display: inline-block;
-        margin: 0 10px;
-        transition: transform 0.2s;
-    }
-    
-    .icones a:hover {
-        transform: scale(1.1);
-    }
-    
-    .icones img {
-        width: 40px;
-        height: 40px;
-    }
-    
-    footer {
-        text-align: center;
-        padding: 1rem 0;
-        margin-top: 2rem;
-        background-color: #eee;
-        font-size: 0.9rem;
-    }
-    .audio-btn {
-        background: none;
-        border: none;
-        font-size: 1rem;
-        cursor: pointer;
-        margin-left: 8px;
-        transition: transform 0.2s;
-    }
-    
-    .audio-btn:hover {
-        transform: scale(1.2);
-        color: #ffffff;
-    }
-    
-    .volume-slider {
-        vertical-align: middle;
-        width: 100px;
-        margin-left: 10px;
-    }
-    .servicos {
-        max-width: 900px;
-        margin: 3rem auto;
-        padding: 1rem;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    
-    .servicos h2 {
-        margin-bottom: 1rem;
-        text-align: center;
-        color: #bc0fdf;
-    }
-    
-    .tabela-servicos {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 1rem;
-    }
-    
-    .tabela-servicos th,
-    .tabela-servicos td {
-        border: 1px solid #ddd;
-        padding: 12px 16px;
-        text-align: left;
-    }
-    
-    .tabela-servicos thead {
-        background-color: #fc14147e;
-        color: #fff;
-    }
-    
-    .tabela-servicos tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    
-    .tabela-servicos tr:hover {
-        background-color: #f1f1f1;
-    }
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Uncial Antiqua', serif;
+    background-color: #0f0f1a;
+    color: #e6e6e6;
+    line-height: 1.6;
+    background-size: cover;
+}
+
+h1 {
+    color: #f0f0f0;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: #1d1d2f;
+    color: #f0f0f0;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.perfil-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #8ab3ff;
+    box-shadow: 0 0 10px #4a90e2;
+}
+
+.curiosidades {
+    background-color: #1a1a2e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    margin-bottom: 2rem;
+    color: #d8e0f2;
+}
+
+.curiosidades h3 {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #4a90e2;
+    padding-bottom: 0.5rem;
+}
+
+.curiosidades ul {
+    list-style: square;
+    padding-left: 2rem;
+}
+
+.curiosidades li {
+    margin-bottom: 0.5rem;
+}
+
+.links {
+    text-align: center;
+}
+
+.links h3 {
+    margin-bottom: 1rem;
+}
+
+.icones a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.icones a:hover {
+    transform: scale(1.1);
+}
+
+.icones img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0.8) contrast(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background-color: #14141f;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.audio-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 8px;
+    color: #cdd4f2;
+    transition: transform 0.2s;
+}
+
+.audio-btn:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+.volume-slider {
+    vertical-align: middle;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.servicos {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #1e2230;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.servicos h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #c9dbff;
+}
+
+.tabela-servicos {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+    background-color: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #e4e4e4;
+}
+
+.tabela-servicos thead {
+    background-color: #222d44;
+    color: #ffffff;
+}
+
+.tabela-servicos th,
+.tabela-servicos td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.tabela-servicos tr:nth-child(even) {
+    background-color: #1c2333;
+}
+
+.tabela-servicos tr:hover {
+    background-color: #2c3e50;
+    transition: background-color 0.3s;
+}
